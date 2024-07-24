@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import { FlipWordsDemo } from '../components/name this later/FlipWordsDemo';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -16,6 +17,7 @@ function LandingPage() {
 
     return (
         <div className="landing-page">
+            <FlipWordsDemo />
             <Card>
                 <CardHeader>
                     <h1>Welcome to Intel Apply</h1>
