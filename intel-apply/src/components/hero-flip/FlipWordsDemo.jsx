@@ -1,4 +1,4 @@
-import { FlipWords } from "../ui/flip-words";
+import { FlipWords } from "./flip-words";
 
 export function FlipWordsDemo() {
   const words = [

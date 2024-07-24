@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navbar/navbar";
 import { cn } from "@/lib/utils";
 import {
     ClerkProvider,
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <ClerkProvider>
             <html lang="en" suppressHydrationWarning>
                 <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+                    <Navbar />
                     <SignedOut>
                         <SignInButton />
                     </SignedOut>

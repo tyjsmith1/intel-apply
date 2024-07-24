@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { FlipWordsDemo } from '../components/name this later/FlipWordsDemo';
+import { FlipWordsDemo } from '../components/hero-flip/FlipWordsDemo';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '../components/ui/card';
 import { Input } from '../components/ui/input';

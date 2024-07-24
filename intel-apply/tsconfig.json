@@ -116,7 +116,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/name this later/FlipWordsDemo.jsx"  ],
+, "src/components/hero-flip/FlipWordsDemo.jsx", "src/components/navbar/desktop-navbar.jsx"  ],
   "exclude": [
     "node_modules"
   ]
