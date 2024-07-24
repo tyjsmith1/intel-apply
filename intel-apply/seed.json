@@ -1,0 +1,50 @@
+[
+    {
+        "company": "Pinterest",
+        "networkingEfforts": "TBD",
+        "position": "Apprentice Engineer",
+        "location": "Remote",
+        "type": "FT",
+        "salary": "80-100",
+        "url": "",
+        "dateApplied": "2024-01-28",
+        "status": "Rejected",
+        "match": ""
+    },
+    {
+        "company": "Ace Hardware",
+        "networkingEfforts": "TBD",
+        "position": "React Software Engineer",
+        "location": "Oak Brook, IL",
+        "type": "FT",
+        "salary": "120",
+        "url": "https://acehardware.wd1.myworkdayjobs.com/en-US/External/userHome",
+        "dateApplied": "2024-01-29",
+        "status": "Rejected",
+        "match": ""
+    },
+    {
+        "company": "Northrop Grumman",
+        "networkingEfforts": "TBD",
+        "position": "Associate Software Engineer",
+        "location": "",
+        "type": "FT",
+        "salary": "120",
+        "url": "",
+        "dateApplied": "2024-01-28",
+        "status": "Rejected",
+        "match": ""
+    },
+    {
+        "company": "Abnormal",
+        "networkingEfforts": "TBD",
+        "position": "Back End Software Engineer",
+        "location": "Remote",
+        "type": "FT",
+        "salary": "120-140",
+        "url": "https://careers.abnormalsecurity.com/jobs/5802043003?gh_jid=5802043003",
+        "dateApplied": "2024-01-29",
+        "status": "Rejected",
+        "match": ""
+    }
+]
