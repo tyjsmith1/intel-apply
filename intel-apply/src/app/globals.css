@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-text {
+    background: linear-gradient(90deg, #3479b6, #d54bf8); /* Example gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @layer base {
-  :root {
+:root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
