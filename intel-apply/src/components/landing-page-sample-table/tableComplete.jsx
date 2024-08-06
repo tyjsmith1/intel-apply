@@ -10,9 +10,9 @@ async function getData() {
             company: 'Dunder Mifflin',
             salary: 100000,
             url: 'dundermifflin.com/careers',
-            stage: 'applied',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-08-01'
         },
         {
@@ -22,9 +22,9 @@ async function getData() {
             company: 'Initech',
             salary: 90000,
             url: 'initech.com/jobs',
-            stage: 'phone-screen',
-            status: 'open',
-            contacts: [],
+            stage: 'Phone Screen',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-07-20'
         },
         {
@@ -34,9 +34,9 @@ async function getData() {
             company: 'Hooli',
             salary: 110000,
             url: 'hooli.com/careers',
-            stage: 'technical-challenge',
-            status: 'open',
-            contacts: [],
+            stage: 'Technical Challenge',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-06-15'
         },
         {
@@ -46,9 +46,9 @@ async function getData() {
             company: 'Pied Piper',
             salary: 120000,
             url: 'piedpiper.com/jobs',
-            stage: 'offer-negotiation',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Closed',
+            // contacts: [],
             dateUpdated: '2024-05-10'
         },
         {
@@ -58,9 +58,9 @@ async function getData() {
             company: 'Aperture Science',
             salary: 95000,
             url: 'aperturescience.com/careers',
-            stage: 'applied',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-04-05'
         },
         {
@@ -70,9 +70,9 @@ async function getData() {
             company: 'Umbrella Corporation',
             salary: 105000,
             url: 'umbrella.com/jobs',
-            stage: 'phone-screen',
-            status: 'open',
-            contacts: [],
+            stage: 'Phone Screen',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-03-25'
         },
         {
@@ -82,9 +82,9 @@ async function getData() {
             company: 'Cyberdyne Systems',
             salary: 115000,
             url: 'cyberdyne.com/careers',
-            stage: 'technical-challenge',
-            status: 'open',
-            contacts: [],
+            stage: 'Technical Challenge',
+            status: 'Closed',
+            // contacts: [],
             dateUpdated: '2024-02-20'
         },
         {
@@ -94,9 +94,9 @@ async function getData() {
             company: 'Tyrell Corporation',
             salary: 130000,
             url: 'tyrell.com/jobs',
-            stage: 'offer-negotiation',
-            status: 'open',
-            contacts: [],
+            stage: 'Offer Negotiation',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2024-01-15'
         },
         {
@@ -106,9 +106,9 @@ async function getData() {
             company: 'Wayne Enterprises',
             salary: 95000,
             url: 'wayneenterprises.com/careers',
-            stage: 'applied',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-12-10'
         },
         {
@@ -118,9 +118,9 @@ async function getData() {
             company: 'Stark Industries',
             salary: 125000,
             url: 'starkindustries.com/jobs',
-            stage: 'phone-screen',
-            status: 'open',
-            contacts: [],
+            stage: 'Phone Screen',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-11-05'
         },
         {
@@ -130,9 +130,9 @@ async function getData() {
             company: 'Oscorp',
             salary: 100000,
             url: 'oscorp.com/careers',
-            stage: 'technical-challenge',
-            status: 'open',
-            contacts: [],
+            stage: 'Technical Challenge',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-10-25'
         },
         {
@@ -142,9 +142,9 @@ async function getData() {
             company: 'LexCorp',
             salary: 110000,
             url: 'lexcorp.com/jobs',
-            stage: 'offer-negotiation',
-            status: 'open',
-            contacts: [],
+            stage: 'Offer Negotiation',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-09-20'
         },
         {
@@ -154,9 +154,9 @@ async function getData() {
             company: 'Weyland-Yutani',
             salary: 95000,
             url: 'weyland-yutani.com/careers',
-            stage: 'applied',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Closed',
+            // contacts: [],
             dateUpdated: '2023-08-15'
         },
         {
@@ -166,9 +166,9 @@ async function getData() {
             company: 'Cyberdyne Systems',
             salary: 70000,
             url: 'cyberdyne.com/jobs',
-            stage: 'phone-screen',
-            status: 'open',
-            contacts: [],
+            stage: 'Phone Screen',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-07-10'
         },
         {
@@ -178,9 +178,9 @@ async function getData() {
             company: 'Initech',
             salary: 140000,
             url: 'initech.com/jobs',
-            stage: 'technical-challenge',
-            status: 'open',
-            contacts: [],
+            stage: 'Technical Challenge',
+            status: 'Closed',
+            // contacts: [],
             dateUpdated: '2023-06-05'
         },
         {
@@ -190,9 +190,9 @@ async function getData() {
             company: 'Hooli',
             salary: 130000,
             url: 'hooli.com/careers',
-            stage: 'offer-negotiation',
-            status: 'open',
-            contacts: [],
+            stage: 'Offer Negotiation',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-05-25'
         },
         {
@@ -202,9 +202,9 @@ async function getData() {
             company: 'Pied Piper',
             salary: 90000,
             url: 'piedpiper.com/jobs',
-            stage: 'applied',
-            status: 'open',
-            contacts: [],
+            stage: 'Applied',
+            status: 'Closed',
+            // contacts: [],
             dateUpdated: '2023-04-20'
         },
         {
@@ -214,9 +214,9 @@ async function getData() {
             company: 'Aperture Science',
             salary: 85000,
             url: 'aperturescience.com/careers',
-            stage: 'phone-screen',
-            status: 'open',
-            contacts: [],
+            stage: 'Phone Screen',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-03-15'
         },
         {
@@ -226,9 +226,9 @@ async function getData() {
             company: 'Umbrella Corporation',
             salary: 95000,
             url: 'umbrella.com/jobs',
-            stage: 'technical-challenge',
-            status: 'open',
-            contacts: [],
+            stage: 'Technical Challenge',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-02-10'
         },
         {
@@ -238,9 +238,9 @@ async function getData() {
             company: 'Tyrell Corporation',
             salary: 90000,
             url: 'tyrell.com/jobs',
-            stage: 'offer-negotiation',
-            status: 'open',
-            contacts: [],
+            stage: 'Offer Negotiation',
+            status: 'Open',
+            // contacts: [],
             dateUpdated: '2023-01-05'
         }
     ]

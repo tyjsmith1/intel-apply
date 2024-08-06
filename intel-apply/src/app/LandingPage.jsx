@@ -1,9 +1,8 @@
 "use client"
 import CtaBtns from '../components/cta-btns/ctaBtns';
-import CareerBuilder from '../components/feature-teasers/careerBuilder';
-import JobHunter from '../components/feature-teasers/jobHunter';
+import CareerBuilder from '../components/feature-teasers/builder/careerBuilder';
+import JobHunter from '../components/feature-teasers/hunter/jobHunter';
 import { FlipWordsDemo } from '../components/hero-flip/FlipWordsDemo';
-import TableComplete from '../components/landing-page-sample-table/tableComplete';
 import Subheading from '../components/subheading/Subheading';
 
 function LandingPage() {
@@ -22,10 +21,10 @@ function LandingPage() {
                     alt="handshake"
                     className="md:w-1/3 h-auto max-w-sm rounded-lg shadow-lg mt-4 md:mt-0 md:ml-8"></img>
             </div>
-            {/* <TempCard /> */}
-            <JobHunter />
-            <CareerBuilder />
-            <TableComplete />
+            <div className="mx-20">
+                <JobHunter />
+                <CareerBuilder />
+            </div>
         </div>
     );
 }
