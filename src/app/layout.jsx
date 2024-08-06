@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar/navbar";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from '@clerk/nextjs';
+import { Analytics } from "@vercel/analytics/react";
 import { Inter as FontSans } from 'next/font/google';
 import '../app/globals.css';
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
                 <body className={cn("min-h-screen bg-background font-sans antialiased bg-gray-100", fontSans.variable)}>
                     <Navbar />
                     {children}
+                    <Analytics/>
                 </body>
             </html>
         </ClerkProvider>
