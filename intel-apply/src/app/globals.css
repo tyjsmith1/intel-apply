@@ -9,6 +9,19 @@
     -webkit-text-fill-color: transparent;
 }
 
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.landing-page {
+  padding: 20px; /* Adjust as needed */
+}
+
+.cta-section {
+  margin-top: 40px; /* Add more margin if needed */
+}
+
 @layer base {
 :root {
     --background: 0 0% 100%;

@@ -20,6 +20,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        gradientStart: '#3479b6',
+        gradientEnd: '#d54bf8',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
