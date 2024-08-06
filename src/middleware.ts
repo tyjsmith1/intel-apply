@@ -1,7 +1,13 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
+const publishableKey = 'pk_test_ZnJlZS1mb3gtMTMuY2xlcmsuYWNjb3VudHMuZGV2JA';
+
+if (!publishableKey) {
+  console.error("Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY environment variable")
+}
+
 export default clerkMiddleware({
-  publishableKey: process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  publishableKey
 });
 
 export const config = {
