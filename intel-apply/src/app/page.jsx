@@ -1,9 +1,10 @@
+import LandingPage from "./LandingPage";
 
 function Home() {
 
     return (
         <div>
-            <h1>Intel Apply</h1>
+            <LandingPage />
         </div>
     );
 }
