@@ -3,6 +3,7 @@ import CtaBtns from '../components/cta-btns/ctaBtns';
 import CareerBuilder from '../components/feature-teasers/builder/careerBuilder';
 import JobHunter from '../components/feature-teasers/hunter/jobHunter';
 import { FlipWordsDemo } from '../components/hero-flip/FlipWordsDemo';
+import SignUpWaitList from '../components/signUpWaitList/signUpWaitList';
 import Subheading from '../components/subheading/Subheading';
 
 function LandingPage() {
@@ -19,8 +20,10 @@ function LandingPage() {
                 <img 
                     src={ imageHandshake }
                     alt="handshake"
-                    className="md:w-1/3 h-auto max-w-sm rounded-lg shadow-lg mt-4 md:mt-0 md:ml-8"></img>
+                    className="md:w-1/3 h-auto max-w-sm rounded-lg shadow-lg mt-4 md:mt-0 md:ml-8">
+                </img>
             </div>
+            <SignUpWaitList />
             <div className="mx-20">
                 <JobHunter />
                 <CareerBuilder />
