@@ -1,4 +1,4 @@
-import FormTest from './formTest'
+import SignUpWaitListForm from './signUpWaitListForm'
 
 export default function SignUpWaitList() {
     return (
@@ -10,8 +10,7 @@ export default function SignUpWaitList() {
                 Claim your spot!
             </h2>
             <div className='mt-16 w-full justify-center'>
-                {/* <SignUpWaitListForm /> */}
-                <FormTest />
+                <SignUpWaitListForm />
             </div>
         </div>
     )

@@ -17,6 +17,18 @@
   transition: opacity 0.3s ease;
 }
 
+.gradient-background-color {
+  background: linear-gradient(90deg, #3479b6, #d54bf8);
+}
+
+.gradient-background-color-start {
+  background: #3479b6;
+}
+
+.gradient-background-color-end {
+  background: #d54bf8;
+}
+
 .gradient-background-button:hover {
   opacity: 0.9;
 }
