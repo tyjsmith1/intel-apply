@@ -15,10 +15,18 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "sm": "100%",
+        "md": "100%",
+        "lg": "100%",
       },
     },
     extend: {
+      screens: {
+        "xs": "300px",
+        "sm": "600px",
+        "md": "900px",
+        "lg": "1230px",
+      },
       colors: {
         gradientStart: 'var(--primary)',
         gradientEnd: 'var(--secondary)',
