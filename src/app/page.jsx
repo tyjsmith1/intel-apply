@@ -1,10 +1,37 @@
-import LandingPage from "./LandingPage";
+"use client"
+import CtaBtns from '../components/cta-btns/ctaBtns';
+import CareerBuilder from '../components/feature-teasers/builder/careerBuilder';
+import JobHunter from '../components/feature-teasers/hunter/jobHunter';
+import { FlipWordsDemo } from '../components/hero-flip/FlipWordsDemo';
+import SignUpWaitList from '../components/signUpWaitList/signUpWaitList';
+import Subheading from '../components/subheading/Subheading';
 
 function Home() {
+    const imageHandshake = "/landingimages/handshake.jpg"
 
     return (
-        <div>
-            <LandingPage />
+        <div className="flex flex-col items-center justify-center min-h-screen w-full">
+            <div className="flex flex-row items-center justify-center w-full h-full mt-8">
+                <div className='flex flex-col justify-between h-full'>
+                    <FlipWordsDemo />
+                    <Subheading />
+                    <CtaBtns />
+                </div>
+                <img 
+                    src={ imageHandshake }
+                    alt="handshake"
+                    className="md:w-1/3 h-auto max-w-sm rounded-lg shadow-lg mt-4 md:mt-0 md:ml-8">
+                </img>
+            </div>
+            <div id="signup">
+                <SignUpWaitList />
+            </div>
+            <div id="features" className="w-full relative min-h-screen bg-gradient-to-b from-gray-300 via-gray-100 to-gray-100">
+                <JobHunter />
+            </div>
+            <div className="w-full relative min-h-screen bg-gradient-to-b from-gray-300 via-gray-100 to-gray-100">
+                <CareerBuilder />
+            </div>
         </div>
     );
 }

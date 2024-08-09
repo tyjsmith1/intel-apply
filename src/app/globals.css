@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .gradient-text {
-    background: linear-gradient(90deg, #3479b6, #d54bf8);
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .gradient-background-button {
-  background: linear-gradient(90deg, #3479b6, #d54bf8);
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem; /* Adjust as needed */
@@ -18,15 +18,15 @@
 }
 
 .gradient-background-color {
-  background: linear-gradient(90deg, #3479b6, #d54bf8);
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
 }
 
 .gradient-background-color-start {
-  background: #3479b6;
+  background: var(--primary);
 }
 
 .gradient-background-color-end {
-  background: #d54bf8;
+  background: var(--secondary);
 }
 
 .gradient-background-button:hover {
@@ -54,9 +54,11 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
+    --primary: #3479b6;
     --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
+    /* --secondary: #d54bf8; */
+    /* --secondary: #e96e6e; */
+    --secondary: #975bd7;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -82,9 +84,9 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
+    --primary: #3479b6;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: #d54bf8;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -110,4 +112,70 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-auto {
+    height: auto;
+}
+
+/* for svg */
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 110px;
+}
+
+.wave .shape-fill {
+  fill: #F3F4F6;
+}
+
+/* new wave  */
+.multi-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.multi-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 110px;
+}
+
+.multi-wave .shape-fill {
+  fill: #F3F4F6;
 }
