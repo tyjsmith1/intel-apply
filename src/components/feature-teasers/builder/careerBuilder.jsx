@@ -1,14 +1,21 @@
+import MultiWaveSvg from '../../ui/multiWaveSvg';
+import HeroBuilder from '../builder/heroBuilder';
 import FeatureFeedbackLog from "./featureFeedbackLog";
 import FeatureNetworkTracking from "./featureNetworkTracking";
 
 export default function CareerBuilder() {
     return (
-        <div className="py-12 text-center min-h-screen">
-            <h2 className="text-3xl font-bold mb-6">For the Career Builder</h2>
-            <div className="flex flex-col items-center space-y-8">
-                <FeatureFeedbackLog />
-                <FeatureNetworkTracking />
+        <section>
+            <div className="wave">
+                <MultiWaveSvg />
             </div>
-        </div>
+            <div className="relative py-12 text-center mt-10">
+                <HeroBuilder />
+                <div className="flex flex-col items-center space-y-8">
+                    <FeatureFeedbackLog />
+                    <FeatureNetworkTracking />
+                </div>
+            </div>
+        </section>
     );
 }

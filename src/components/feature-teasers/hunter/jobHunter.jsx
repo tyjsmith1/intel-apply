@@ -1,14 +1,22 @@
+// import WaveSvg from "@/components/ui/waveSvg";
+import MultiWaveSvg from "@/components/ui/multiWaveSvg";
 import FeatureAnalytics from "./featureAnalytics";
 import FeatureAppTracker from "./featureAppTracker";
+import HeroHunter from "./heroHunter";
 
 export default function JobHunter() {
     return (
-        <div className="py-12 text-center min-h-screen">
-            <h2 className="text-3xl font-bold mb-6">For the Job Hunter</h2>
-            <div className="flex flex-col items-center space-y-8">
-                <FeatureAppTracker />
-                <FeatureAnalytics />
+        <section>
+            <div className="wave">
+                <MultiWaveSvg />
             </div>
-        </div>
+            <div className="relative py-12 text-center mt-10">
+                <HeroHunter />
+                <div className="flex flex-col items-center space-y-8">
+                    <FeatureAppTracker />
+                    <FeatureAnalytics />
+                </div>
+            </div>
+        </section>
     );
 }
