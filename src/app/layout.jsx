@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             <html lang="en" suppressHydrationWarning>
                 <body className={cn("min-h-screen bg-background font-sans antialiased bg-gray-100", fontSans.variable)}>
                     <Navbar />
-                    {children}
+                    <main>{children}</main>
                     <Analytics/>
                 </body>
             </html>
