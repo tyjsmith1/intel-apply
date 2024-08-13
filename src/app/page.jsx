@@ -1,7 +1,7 @@
 "use client"
 import CtaBtns from '../components/cta-btns/ctaBtns';
-import CareerBuilder from '../components/feature-teasers/builder/careerBuilder';
-import JobHunter from '../components/feature-teasers/hunter/jobHunter';
+import CareerBuilder from '../components/feature-teasers/careerBuilder';
+import JobHunter from '../components/feature-teasers/jobHunter';
 import { FlipWordsDemo } from '../components/hero-flip/FlipWordsDemo';
 import SignUpWaitList from '../components/signUpWaitList/signUpWaitList';
 import Subheading from '../components/subheading/Subheading';
