@@ -1,6 +1,6 @@
 import { FiCheckCircle } from "react-icons/fi";
 
-export default function FeatureAppTrackerMobile() {
+export default function FeatureAnalyticsMobile() {
     return (
         <div className="p-4 bg-white rounded-lg shadow-lg m-4">
             <div className="text-center">
