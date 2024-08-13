@@ -1,5 +1,6 @@
 import ButtonWaitlist from '../cta-btns/buttonWaitlist';
-import Logo from '../ui/logo';
+// import Logo from '../ui/logo';
+import LogoSvg from '../ui/LogoSvg';
 
 import {
     NavigationMenu,
@@ -10,8 +11,11 @@ export function Navbar() {
     return (
         <div className='w-full flex items-center justify-between p-2 bg-white shadow-md'>
             <div>
-                <a href="/" className="flex items-center flex-row text-2xl font-bold gradient-text">
+                {/* <a href="/" className="flex items-center flex-row text-2xl font-bold gradient-text">
                     <Logo /> Hire Ground
+                </a> */}
+                <a href='/'>
+                    <LogoSvg />
                 </a>
             </div>
             <NavigationMenu>

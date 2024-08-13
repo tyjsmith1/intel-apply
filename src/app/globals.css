@@ -54,11 +54,13 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: #3479b6;
+    /* --primary: #3479b6; */
+    --primary: #254996;
     --primary-foreground: 210 40% 98%;
     /* --secondary: #d54bf8; */
     /* --secondary: #e96e6e; */
-    --secondary: #975bd7;
+    /* --secondary: #975bd7; */
+    --secondary: #41bea5;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
