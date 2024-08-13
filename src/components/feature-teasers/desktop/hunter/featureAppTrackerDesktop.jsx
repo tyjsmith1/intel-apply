@@ -1,6 +1,6 @@
 import { FiCheckCircle } from "react-icons/fi";
 
-export default function FeatureAppTracker() {
+export default function FeatureAppTrackerDesktop() {
     return (
         <div className="flex flex-col items-center space-y-8">
             <div className="relative flex items-center justify-center"
