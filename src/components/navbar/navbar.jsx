@@ -31,7 +31,9 @@ export function Navbar() {
                     </NavigationMenuItem> */}
                 </NavigationMenuList>
             </NavigationMenu>
-            <ButtonWaitlist />
+            <div className='hidden sm:block'>
+                <ButtonWaitlist />
+            </div>
             {/* <SignInOut /> */}
         </div>
     )
