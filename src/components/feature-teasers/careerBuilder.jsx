@@ -4,7 +4,7 @@ import FeatureFeedbackLogDesktop from "./desktop/builder/featureFeedbackLogDeskt
 import FeatureNetworkTrackingDesktop from "./desktop/builder/featureNetworkTrackingDesktop";
 import HeroBuilder from './heroBuilder';
 import FeatureFeedbackLogMobile from "./mobile/builder/featureFeedbackLogMobile";
-import FeatureNetworkTrackingMobile from "./mobile/builder/FeatureNetworkTrackingMobile";
+import FeatureNetworkTrackingMobile from "./mobile/builder/featureNetworkTrackingMobile";
 
 export default function CareerBuilder() {
     const { width } = useWindowSize()
