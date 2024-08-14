@@ -12,7 +12,7 @@ export default function CareerBuilder() {
 
     return (
         <section>
-            <div className="wave">
+            <div className="wave absolute w-full h-full">
                 <MultiWaveSvg />
             </div>
             <div className="relative py-12 text-center mt-10">

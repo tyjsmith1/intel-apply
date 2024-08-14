@@ -48,9 +48,9 @@
 
 @layer base {
 :root {
-    --background: 0 0% 100%;
+    --background: #f3f4f6;
     --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
+    --card: #f3f4f6;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -77,18 +77,26 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* customs */
+    --navbar-background: 0 0% 95%;
+    --background-gradient: linear-gradient(to bottom, #d1d5db, #f3f4f6, #f3f4f6);
+    --hero-text-color: #172554;
+    --feature-div-bg-color-primary: #254996;
+    --feature-div-bg-color-secondary: #41bea5;
+    --card-gradient-bg: linear-gradient(to top, #f2fbf9, #bdd1e3);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: #0f0f0f;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: #2d2d2d;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
     --primary: #3479b6;
+    /* --primary: #254996; */
     --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: #d54bf8;
+    --secondary: #41bea5;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -104,6 +112,13 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    /* customs */
+    --navbar-background: 222.2 84% 4.9%;
+    --background-gradient: linear-gradient(to bottom, #1d1d1d, var(--background)), var(--background);
+    --hero-text-color: #ffffff;
+    --feature-div-bg-color-primary: linear-gradient(to top, #3a627e, #76c8fe);
+    --feature-div-bg-color-secondary: linear-gradient(to top, #3c8b7b, #60ddc4);
+    --card-gradient-bg: linear-gradient(to top, #0f4c3f, #2e5272);
   }
 }
 
@@ -157,10 +172,6 @@
   height: 110px;
 }
 
-.wave .shape-fill {
-  fill: #F3F4F6;
-}
-
 /* new wave  */
 .multi-wave {
   position: absolute;
@@ -176,8 +187,4 @@
   display: block;
   width: calc(100% + 1.3px);
   height: 110px;
-}
-
-.multi-wave .shape-fill {
-  fill: #F3F4F6;
 }

@@ -10,17 +10,18 @@ export default function FeatureAnalyticsDesktop() {
                 }}
             >
                 {/* bottom layer */}
-                <div className="absolute gradient-background-color-end rounded-3xl shadow-2xl z-10"
+                <div className="absolute rounded-3xl shadow-2xl z-10"
                     style={{
                         width: '110%',
                         height: '110%',
                         maxWidth: '850px',
                         maxHeight: '550px',
-                        opacity: 0.6,
+                        opacity: 0.8,
                         backdropFilter: 'blur(50px)',
                         transform: 'rotate(3deg)',
                         left: '23%',
-                        top: '3%'
+                        top: '3%',
+                        background: 'var(--feature-div-bg-color-secondary)'
                     }}>    
                 </div>
                 {/* primary bottom layer */}
@@ -43,21 +44,22 @@ export default function FeatureAnalyticsDesktop() {
                     />
                 </div>
                 {/* secondary bottom layer */}
-                <div className="absolute gradient-background-color-start rounded-3xl shadow-2xl z-30"
+                <div className="absolute rounded-3xl shadow-2xl z-30"
                     style={{
                         width: '100%',
                         height: '55%',
                         maxWidth: '500px',
                         maxHeight: '450px',
-                        opacity: 0.4,
+                        opacity: 0.8,
                         backdropFilter: 'blur(50px)',
                         transform: 'rotate(3deg)',
                         left: '-5%',
                         top: '25%',
+                        background: 'var(--feature-div-bg-color-primary)'
                     }}>
                 </div>
                 {/* top layer */}
-                <div className="relative bg-slate-200 p-6 rounded-xl shadow-2xl z-40"
+                <div className="relative p-6 rounded-xl shadow-2xl z-40"
                     style={{
                         maxWidth: '450px',
                         marginTop: '20px',
@@ -65,6 +67,7 @@ export default function FeatureAnalyticsDesktop() {
                         minHeight: '200px',
                         left: '-30%',
                         transform: 'rotate(-1deg)',
+                        background: 'var(--card)'
                     }}>
                     <div className="text-left">
                         <h3 className="text-2xl font-bold mb-4"><span className="text-2xl">📈</span> Insights & Analytics</h3>
