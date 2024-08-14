@@ -10,17 +10,18 @@ export default function FeatureNetworkTrackingDesktop() {
                 }}
                 >
                     {/* bottom layer */}
-                    <div className="absolute gradient-background-color-end rounded-3xl shadow-2xl z-10"
+                    <div className="absolute rounded-3xl shadow-2xl z-10"
                         style={{
                             width: '100%',
                             height: '100%',
                             maxWidth: '800px',
                             maxHeight: '550px',
-                            opacity: 0.6,
+                            opacity: 0.8,
                             backdropFilter: 'blur(50px)',
                             transform: 'rotate(3deg)',
                             left: '25%',
-                            top: '0'
+                            top: '0',
+                            background: 'var(--feature-div-bg-color-secondary)'
                         }}>    
                     </div>
                     {/* primary bottom layer */}
@@ -43,21 +44,22 @@ export default function FeatureNetworkTrackingDesktop() {
                         />
                     </div>
                     {/* secondary bottom layer */}
-                    <div className="absolute gradient-background-color-start rounded-3xl shadow-2xl z-30"
+                    <div className="absolute rounded-3xl shadow-2xl z-30"
                         style={{
                             width: '100%',
                             height: '55%',
                             maxWidth: '500px',
                             maxHeight: '300px',
-                            opacity: 0.4,
+                            opacity: 0.8,
                             backdropFilter: 'blur(50px)',
                             transform: 'rotate(3deg)',
                             left: '5%',
                             top: '27%',
+                            background: 'var(--feature-div-bg-color-primary)'
                         }}>
                     </div>
                     {/* top layer */}
-                    <div className="relative bg-slate-200 p-6 rounded-xl shadow-2xl z-40"
+                    <div className="relative p-6 rounded-xl shadow-2xl z-40"
                         style={{
                             maxWidth: '450px',
                             marginTop: '20px',
@@ -65,6 +67,7 @@ export default function FeatureNetworkTrackingDesktop() {
                             minHeight: '200px',
                             left: '-20%',
                             transform: 'rotate(-1deg)',
+                            background: 'var(--card)'
                         }}>
                     <div className="text-left">
                         <h3 className="text-2xl font-bold mb-4"><span className="text-4xl">🤝</span> Network Like a Pro</h3>

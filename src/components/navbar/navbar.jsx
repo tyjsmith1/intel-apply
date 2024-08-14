@@ -1,25 +1,26 @@
 import ButtonWaitlist from '../cta-btns/buttonWaitlist';
-// import Logo from '../ui/logo';
 import LogoSvg from '../ui/LogoSvg';
+import ToggleThemeButton from '../ui/toggleThemeButton';
 
 import {
     NavigationMenu,
+    NavigationMenuItem,
     NavigationMenuList
 } from "@/components/ui/navigation-menu";
 
 export function Navbar() {
     return (
-        <div className='w-full flex items-center justify-between p-2 bg-white shadow-md'>
+        <div className='w-full flex items-center justify-between p-2 shadow-md' style={{ background: 'var(--background-gradient)' }}>
             <div>
-                {/* <a href="/" className="flex items-center flex-row text-2xl font-bold gradient-text">
-                    <Logo /> Hire Ground
-                </a> */}
                 <a href='/'>
                     <LogoSvg />
                 </a>
             </div>
             <NavigationMenu>
                 <NavigationMenuList className="flex space-x-6">
+                    <NavigationMenuItem>
+                        <ToggleThemeButton />
+                    </NavigationMenuItem>
                     {/* <NavigationMenuItem>
                         <NavigationMenuLink href="#features" className="hover:text-gray-500">Features</NavigationMenuLink>
                     </NavigationMenuItem> */}
