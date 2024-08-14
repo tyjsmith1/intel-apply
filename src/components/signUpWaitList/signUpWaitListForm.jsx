@@ -1,10 +1,3 @@
-////////////////
-// 
-// Using Framer?
-// See https://www.framer.com/learn/code-components/ for more info
-//
-////////////////
-
 import { useState } from "react";
 
 const INIT = "INIT";
@@ -122,33 +115,49 @@ export default function SignUpFormReact() {
 
     switch (formState) {
         case SUCCESS:
-        return (
-            <div
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    width: "100%",
-                }}
-            >
-                <p
+            return (
+                <div
                     style={{
-                    fontFamily: `'${formStyles.successFont}', sans-serif`,
-                    color: formStyles.successFontColor,
-                    fontSize: `${formStyles.successFontSizePx}px`,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "100%",
+                        padding: "20px",
+                        backgroundColor: "#e0f7fa",
+                        borderRadius: "8px",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                     }}
                 >
-                    {formStyles.successMessage}
-                </p>
-            </div>
-        );
+                    <h2
+                        style={{
+                            fontFamily: `'${formStyles.successFont}', sans-serif`,
+                            color: formStyles.successFontColor,
+                            fontSize: `${formStyles.successFontSizePx + 4}px`,
+                            marginBottom: "10px",
+                        }}
+                    >
+                        🎉 Success!
+                    </h2>
+                    <p
+                        style={{
+                            fontFamily: `'${formStyles.successFont}', sans-serif`,
+                            color: formStyles.successFontColor,
+                            fontSize: `${formStyles.successFontSizePx}px`,
+                            textAlign: "center",
+                        }}
+                    >
+                        {formStyles.successMessage}
+                    </p>
+                </div>
+            );
         case ERROR:
             return (
                 <>
                     <SignUpFormError />
                     <BackButton />
                 </>
-        );
+            );
         default:
             return (
                 <>
