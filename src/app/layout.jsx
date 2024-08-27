@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from 'next-themes';
 import { Inter as FontSans } from 'next/font/google';
 import '../app/globals.css';
+import Footer from '../components/footer/footer';
 
 const fontSans = FontSans({ 
     subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
                     <ThemeProvider attribute="class">
                         <Navbar />
                         <main>{children}</main>
+                        <Footer />
                     </ThemeProvider>
                     <Analytics/>
                 </body>
