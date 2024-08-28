@@ -20,7 +20,7 @@ export default function BlogPost({ params }) {
                 <span className="text-sm font-semibold text-gray-600 bg-[var(--secondary)] text-[var(--secondary-foreground)] px-3 py-1 rounded-full">
                     {post.category}
                 </span>
-                <p className="text-gray-600">By {post.author}</p>
+                <p className="text-gray-600 dark:text-gray-300">By {post.author}</p>
             </div>
             <Image
                 src={post.image}
