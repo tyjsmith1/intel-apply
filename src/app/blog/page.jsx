@@ -24,7 +24,7 @@ export default function Blog() {
                                 <h3 className="gradient-text text-xl font-semibold mb-2">
                                     {post.title}
                                 </h3>
-                                <p className='text-gray-600 mb-2'>{post.excerpt}</p>
+                                <p className='text-gray-600 dark:text-gray-300 mb-2'>{post.excerpt}</p>
                                 <p className='font-bold text-sm'>by {post.author}</p>
                             </div>
                         </div>
