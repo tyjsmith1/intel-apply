@@ -1,6 +1,6 @@
+import { blogPosts } from '@/data/blogPosts';
 import Image from 'next/image';
 import Link from 'next/link';
-import { blogPosts } from '../page';
 
 export default function BlogPost({ params }) {
     const { id } = params;
