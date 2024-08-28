@@ -1,4 +1,5 @@
 import MultiWaveSvg from "@/components/ui/multiWaveSvg";
+import { useEffect, useState } from 'react';
 import useWindowSize from '../../hooks/useWindowSize';
 import FeatureAnalyticsDesktop from "./desktop/hunter/featureAnalyticsDesktop";
 import FeatureAppTrackerDesktop from "./desktop/hunter/featureAppTrackerDesktop";
@@ -7,8 +8,12 @@ import FeatureAnalyticsMobile from "./mobile/hunter/featureAnalyticsMobile";
 import FeatureAppTrackerMobile from "./mobile/hunter/featureAppTrackerMobile";
 
 export default function JobHunter() {
-    const { width } = useWindowSize()
-    const isMobile = width <= 768
+    const [isMobile, setIsMobile] = useState(true);
+    const { width } = useWindowSize();
+
+    useEffect(() => {
+        setIsMobile(width <= 768);
+    }, [width]);
 
     return (
         <section>
@@ -17,12 +22,9 @@ export default function JobHunter() {
             </div>
             <div className="relative py-12 text-center mt-10">
                 <HeroHunter />
-                {isMobile ? (
-                    <>
-                        <FeatureAppTrackerMobile />
-                        <FeatureAnalyticsMobile />
-                    </>
-                ) : (
+                <FeatureAppTrackerMobile />
+                <FeatureAnalyticsMobile />
+                {!isMobile && (
                     <>
                         <FeatureAppTrackerDesktop />
                         <FeatureAnalyticsDesktop />
