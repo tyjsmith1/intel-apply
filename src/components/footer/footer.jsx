@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <footer className="w-full py-6 mt-12" style={{ background: 'var(--background-gradient)' }}>
+        <footer className="w-full h-24 py-6 mt-12" style={{ background: 'var(--background-gradient)' }}>
         <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center h-full">
             <div className="mb-4 md:mb-0">
                 <Link href="/" className="text-2xl font-bold gradient-text">
                 Hire Ground
