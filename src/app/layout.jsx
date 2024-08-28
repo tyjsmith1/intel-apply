@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from 'next-themes';
 import { Inter as FontSans } from 'next/font/google';
 import '../app/globals.css';
+import Footer from '../components/footer/footer';
 
 const fontSans = FontSans({ 
     subsets: ["latin"],
@@ -43,10 +44,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <ClerkProvider>
-                <body suppressHydrationWarning className={cn("min-h-screen font-sans antialiased", fontSans.variable)} style={{ backgroundColor: 'var(--background)' }}>
+                <body suppressHydrationWarning className={cn("min-h-screen font-sans antialiased flex flex-col", fontSans.variable)} style={{ backgroundColor: 'var(--background)' }}>
                     <ThemeProvider attribute="class">
                         <Navbar />
-                        <main>{children}</main>
+                        <main className="flex-grow">{children}</main>
+                        <Footer />
                     </ThemeProvider>
                     <Analytics/>
                 </body>
