@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import useWindowSize from '../../hooks/useWindowSize';
 import MultiWaveSvg from '../ui/multiWaveSvg';
 import FeatureFeedbackLogDesktop from "./desktop/builder/featureFeedbackLogDesktop";
@@ -7,8 +8,13 @@ import FeatureFeedbackLogMobile from "./mobile/builder/featureFeedbackLogMobile"
 import FeatureNetworkTrackingMobile from "./mobile/builder/featureNetworkTrackingMobile";
 
 export default function CareerBuilder() {
-    const { width } = useWindowSize()
-    const isMobile = width <= 768
+    const [isMounted, setIsMounted] = useState(false);
+    const { width } = useWindowSize();
+    const isMobile = width <= 768;
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     return (
         <section>
@@ -17,16 +23,23 @@ export default function CareerBuilder() {
             </div>
             <div className="relative py-12 text-center mt-10">
                 <HeroBuilder />
-                {isMobile ? (
+                {!isMounted ? (
                     <>
                         <FeatureFeedbackLogMobile />
                         <FeatureNetworkTrackingMobile />
                     </>
                 ) : (
-                    <>
-                        <FeatureFeedbackLogDesktop />
-                        <FeatureNetworkTrackingDesktop />
-                    </>
+                    isMobile ? (
+                        <>
+                            <FeatureFeedbackLogMobile />
+                            <FeatureNetworkTrackingMobile />
+                        </>
+                    ) : (
+                        <>
+                            <FeatureFeedbackLogDesktop />
+                            <FeatureNetworkTrackingDesktop />
+                        </>
+                    )
                 )}
             </div>
         </section>

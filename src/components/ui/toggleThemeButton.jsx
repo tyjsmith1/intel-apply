@@ -17,7 +17,7 @@ export default function ToggleThemeButton() {
     return (
         <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-2 bg-gray-200 dark:bg-gray-800 rounded-full"
+            className="w-10 h-10 flex items-center justify-center bg-gray-200 dark:bg-gray-800 rounded-full"
         >
         {theme === 'dark' ? <FaSun /> : <FaMoon />}
         </button>
