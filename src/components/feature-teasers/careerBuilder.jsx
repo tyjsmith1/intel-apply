@@ -8,12 +8,13 @@ import FeatureFeedbackLogMobile from "./mobile/builder/featureFeedbackLogMobile"
 import FeatureNetworkTrackingMobile from "./mobile/builder/featureNetworkTrackingMobile";
 
 export default function CareerBuilder() {
-    const [isMobile, setIsMobile] = useState(true);
+    const [isMounted, setIsMounted] = useState(false);
     const { width } = useWindowSize();
+    const isMobile = width <= 768;
 
     useEffect(() => {
-        setIsMobile(width <= 768);
-    }, [width]);
+        setIsMounted(true);
+    }, []);
 
     return (
         <section>
@@ -22,13 +23,23 @@ export default function CareerBuilder() {
             </div>
             <div className="relative py-12 text-center mt-10">
                 <HeroBuilder />
-                <FeatureFeedbackLogMobile />
-                <FeatureNetworkTrackingMobile />
-                {!isMobile && (
+                {!isMounted ? (
                     <>
-                        <FeatureFeedbackLogDesktop />
-                        <FeatureNetworkTrackingDesktop />
+                        <FeatureFeedbackLogMobile />
+                        <FeatureNetworkTrackingMobile />
                     </>
+                ) : (
+                    isMobile ? (
+                        <>
+                            <FeatureFeedbackLogMobile />
+                            <FeatureNetworkTrackingMobile />
+                        </>
+                    ) : (
+                        <>
+                            <FeatureFeedbackLogDesktop />
+                            <FeatureNetworkTrackingDesktop />
+                        </>
+                    )
                 )}
             </div>
         </section>

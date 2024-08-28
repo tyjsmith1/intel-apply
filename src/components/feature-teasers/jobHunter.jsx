@@ -8,12 +8,13 @@ import FeatureAnalyticsMobile from "./mobile/hunter/featureAnalyticsMobile";
 import FeatureAppTrackerMobile from "./mobile/hunter/featureAppTrackerMobile";
 
 export default function JobHunter() {
-    const [isMobile, setIsMobile] = useState(true);
+    const [isMounted, setIsMounted] = useState(false);
     const { width } = useWindowSize();
+    const isMobile = width <= 768;
 
     useEffect(() => {
-        setIsMobile(width <= 768);
-    }, [width]);
+        setIsMounted(true);
+    }, []);
 
     return (
         <section>
@@ -22,13 +23,23 @@ export default function JobHunter() {
             </div>
             <div className="relative py-12 text-center mt-10">
                 <HeroHunter />
-                <FeatureAppTrackerMobile />
-                <FeatureAnalyticsMobile />
-                {!isMobile && (
+                {!isMounted ? (
                     <>
-                        <FeatureAppTrackerDesktop />
-                        <FeatureAnalyticsDesktop />
+                        <FeatureAppTrackerMobile />
+                        <FeatureAnalyticsMobile />
                     </>
+                ) : (
+                    isMobile ? (
+                        <>
+                            <FeatureAppTrackerMobile />
+                            <FeatureAnalyticsMobile />
+                        </>
+                    ) : (
+                        <>
+                            <FeatureAppTrackerDesktop />
+                            <FeatureAnalyticsDesktop />
+                        </>
+                    )
                 )}
             </div>
         </section>
