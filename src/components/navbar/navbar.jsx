@@ -48,9 +48,9 @@ export function Navbar() {
                         style={{ background: 'var(--background-gradient)' }}>
                         <nav className={`fixed inset-y-0 right-0 w-full flex flex-col p-6 pt-16 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                             <div className="flex flex-col space-y-6 items-left">
-                                {['Join the Waitlist', 'Features', 'Blog'].map((item, index) => (
+                                {['Join the Waitlist', 'Features', 'Blog', 'About'].map((item, index) => (
                                     <a key={item}
-                                        href={item === 'Join the Waitlist' ? '#signup' : item === 'Features' ? '#features' : '/blog'}
+                                        href={item === 'Join the Waitlist' ? '#signup' : item === 'Features' ? '#features' : `/${item.toLowerCase()}`}
                                         onClick={handleNavigation}
                                         className={`text-xl font-semibold flex items-center justify-between p-3 border rounded-md transition-all duration-300 ease-in-out ${
                                             item === 'Join the Waitlist'
@@ -83,8 +83,9 @@ export function Navbar() {
                 <div className="flex items-center space-x-4">
                     {isHomepage && (
                         <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-4">
-                            <a href="#features" className="hover:text-muted-foreground font-bold">Features</a>
+                            <a href="/about" className="hover:text-muted-foreground font-bold">About</a>
                             <a href="/blog" className="hover:text-muted-foreground font-bold">Blog</a>
+                            <a href="#features" className="hover:text-muted-foreground font-bold">Features</a>
                         </div>
                     )}
                     <ToggleThemeButton />
