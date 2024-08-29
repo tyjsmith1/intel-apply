@@ -17,8 +17,17 @@
   transition: opacity 0.3s ease;
 }
 
+.background-overlay {
+  /* background: linear-gradient(90deg, #e1b7f5, #ee8080); */
+  background: #60ddc4
+}
+
 .gradient-background-color {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.gradient-background-color-reverse {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
 }
 
 .gradient-background-color-start {
@@ -199,6 +208,10 @@
     margin-bottom: 1rem;
 }
 
+.prose h2.text-white {
+  color: white !important;
+}
+
 .prose h3 {
     color: var(--secondary);
     font-size: 1.25rem;
@@ -233,4 +246,26 @@
 
 .prose a:hover {
     color: var(--secondary);
+}
+
+@layer utilities {
+  .gradient-text-bright {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-green-300;
+  }
+
+  .background-overlay-muted {
+    @apply bg-gradient-to-r from-blue-500/30 to-green-500/30;
+  }
+}
+
+.gradient-text-blue-teal {
+  background: linear-gradient(45deg, #3479b6, #41bea5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.name-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
